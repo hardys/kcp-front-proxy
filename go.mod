@@ -3,16 +3,12 @@ module github.com/hardys/kcp-front-proxy
 go 1.18
 
 require (
-	github.com/kcp-dev/apimachinery v0.0.0-20220912132244-efe716c18e43
-	github.com/kcp-dev/kcp v0.8.2
-	github.com/kcp-dev/kcp/pkg/apis v0.8.1-0.20220920150505-16826c6fcac4
-	github.com/kcp-dev/logicalcluster/v2 v2.0.0-alpha.1
+	github.com/kcp-dev/kcp v0.8.1-0.20221005104043-b96cf4e08e12
 	github.com/spf13/cobra v1.4.0
-	github.com/spf13/pflag v1.0.5
+	github.com/spf13/pflag v1.0.6-0.20210604193023-d5e0c0615ace
 	golang.org/x/time v0.0.0-20220210224613-90d013bbcef8
 	k8s.io/apimachinery v0.24.3
 	k8s.io/apiserver v0.24.3
-	k8s.io/client-go v0.24.3
 	k8s.io/component-base v0.24.3
 	k8s.io/klog/v2 v2.60.1
 )
@@ -71,6 +67,9 @@ require (
 	github.com/jonboulle/clockwork v0.2.2 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
+	github.com/kcp-dev/apimachinery v0.0.0-20220912132244-efe716c18e43 // indirect
+	github.com/kcp-dev/kcp/pkg/apis v0.8.1-0.20221005104043-b96cf4e08e12 // indirect
+	github.com/kcp-dev/logicalcluster/v2 v2.0.0-alpha.3 // indirect
 	github.com/liggitt/tabwriter v0.0.0-20181228230101-89fcab3d43de // indirect
 	github.com/mailru/easyjson v0.7.6 // indirect
 	github.com/martinlindhe/base36 v1.1.1 // indirect
@@ -144,6 +143,7 @@ require (
 	k8s.io/api v0.24.3 // indirect
 	k8s.io/apiextensions-apiserver v0.24.3 // indirect
 	k8s.io/cli-runtime v0.24.3 // indirect
+	k8s.io/client-go v0.24.3 // indirect
 	k8s.io/cloud-provider v0.0.0 // indirect
 	k8s.io/cluster-bootstrap v0.0.0 // indirect
 	k8s.io/component-helpers v0.0.0 // indirect
@@ -165,7 +165,6 @@ require (
 )
 
 replace (
-	github.com/kcp-dev/kcp => ../../kcp-dev/kcp/
 	k8s.io/api => github.com/kcp-dev/kubernetes/staging/src/k8s.io/api v0.0.0-20220915135949-eeba459ad2a1
 	k8s.io/apiextensions-apiserver => github.com/kcp-dev/kubernetes/staging/src/k8s.io/apiextensions-apiserver v0.0.0-20220915135949-eeba459ad2a1
 	k8s.io/apimachinery => github.com/kcp-dev/kubernetes/staging/src/k8s.io/apimachinery v0.0.0-20220915135949-eeba459ad2a1
